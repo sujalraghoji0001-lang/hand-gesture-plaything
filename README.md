@@ -72,7 +72,7 @@ npx serve .
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000` in Chrome, Edge, or Brave and allow camera access.
+Open `https://startling-panda-33c73f.netlify.app` in Chrome, Edge, or Brave and allow camera access.
 
 ---
 
