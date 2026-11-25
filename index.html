@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Nebula Gesture Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video id="v-preview" autoplay playsinline muted></video>
+    
+    <div id="hint">
+        FIST: BLAST<br>
+        PINCH: HEART<br>
+        2 FING: SATURN<br>
+        3 FING: STAR<br>
+        <span class="sub-hint">MOUSE: MOVE & CLICK FALLBACK</span>
+    </div>
+
+    <div id="status-banner" class="hidden">
+        CAMERA OFFLINE — MOUSE INTERACTION ENABLED
+    </div>
+
+    <div id="ui-layer">
+        <div class="stat-text" id="gesture-name">INITIALIZING ENGINE...</div>
+        <div class="power-track">
+            <div id="power-bar"></div>
+        </div>
+    </div>
+
+    <!-- External Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+
+    <!-- Engine Modules -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
